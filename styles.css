@@ -4,11 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(BackgroundImg.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  filter: brightness(100%);
-  background-repeat: no-repeat;
+background-color: blueviolet;
 }
 h1,
 p {
@@ -25,6 +21,7 @@ p {
   font-family: "Sofia", sans-serif;
   height: 75px;
   margin-bottom: 5%;
+  z-index: 3;
 }
 
 .logo h1 {
@@ -48,12 +45,12 @@ p {
 .menu-icon {
   display: none;
   font-size: 24px;
-  cursor: pointer;
+
 }
 .container {
   display: flex;
   flex-direction: row;
-
+z-index:1;
   justify-content: center;
 }
 .small-container {
@@ -64,7 +61,7 @@ p {
   text-align: left;
   animation-name: flyin;
   animation-duration: 2s;
-
+z-index: 1;
   position: relative;
 }
 .btn {
@@ -91,10 +88,11 @@ p {
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     transition: left 0.5s ease-in-out;
     justify-content: baseline;
     text-align: center;
+    z-index: 3;
   }
   .nav-bar ul.show {
     left: 0;
