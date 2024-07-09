@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Training Website</title>
+</head>
+<body>
+  <div class="nav-bar">
+    <div class="logo">
+      <h1 id="nav-text">My Logo</h1>
+    </div>
+    <ul>
+      <li><a id="nav-text" href="#">Home</a></li>
+      <li><a id="nav-text" href="#">Projects</a></li>
+      <li><a id="nav-text" href="#">Contact</a></li>
+    </ul>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      var navLinks = document.querySelector('.nav-bar ul');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
